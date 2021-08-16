@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>Contoh Perhitungan Metode Naive Bayes | MATERI GURU</title>
+<meta name="url" content="https://materiguru.github.io/contoh-perhitungan-metode-naive-bayes/" />
+<meta property="og:url" content="https://materiguru.github.io/contoh-perhitungan-metode-naive-bayes/">
+<meta property="article:author" content="Heru"> 
+<meta name="author" content="Heru">
+<link rel="canonical" href="https://materiguru.github.io/contoh-perhitungan-metode-naive-bayes/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+    
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "Contoh Perhitungan Metode Naive Bayes",
+    "headline": "Contoh Perhitungan Metode Naive Bayes",
+    "alternativeHeadline": "",
+    "description": "Contoh Perhitungan Metode Naive Bayes. Jumlah sampel Contoh perhitungan mean pada piagam. Diketahui Data Training Sebagai berikut. Dipetakan penggambaran perhitungan Naive Bayesnya seperti berikut.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/materiguru.github.io\/contoh-perhitungan-metode-naive-bayes\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "copyrightHolder" : "MATERI GURU",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-07-22T05:26:19.00Z",
+    "datePublished": "2021-07-22T05:26:19.00Z",
+    "dateModified": "2021-08-16T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "MATERI GURU",
+        "url": "https://materiguru.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/materiguru.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://materiguru.github.io/logo.png",
+    "url" : "https:\/\/materiguru.github.io\/contoh-perhitungan-metode-naive-bayes\/",
+    "wordCount" : "1353",
+    "genre" : [ "soal" ],
+    "keywords" : [ "Contoh" , "perhitungan" , "metode" , "naive" , "bayes" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://materiguru.github.io"><span style="text-transform: capitalize;font-weight: bold;">MATERI GURU</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/belajar/" title="Belajar">Belajar</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/pengetahuan/" title="Pengetahuan">Pengetahuan</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/sekolah/" title="Sekolah">Sekolah</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://materiguru.github.io/categories/sekolah"/>Sekolah</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">Contoh Perhitungan Metode Naive Bayes</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Heru <span class="text-muted d-block mt-1">Jul 22, 2021 · <span class="reading-time">7 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://informatikalogi.com/wp-content/uploads/2017/04/contoh-1-algoritma-naive-bayes.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" alt="Contoh Perhitungan Metode Naive Bayes"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p></p><script type='text/javascript' src='//pl16516212.highperformancecpm.com/b7/0a/80/b70a809db83a9c6a5c25d24145477fef.js'></script>
+<p><strong>Contoh Perhitungan Metode Naive Bayes</strong>. Jumlah sampel Contoh perhitungan mean pada piagam. Diketahui Data Training Sebagai berikut. Dipetakan penggambaran perhitungan Naive Bayesnya seperti berikut. PYX PYXPX 06.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://image.slidesharecdn.com/datamining6-naivebayes-190822075441/95/data-mining-naive-bayes-11-638.jpg?cb=1566460528" alt="Data Mining Naive Bayes" title="Data Mining Naive Bayes" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Data Mining Naive Bayes From slideshare.net</p>
+<p><span class="navi text-left"><a class="badge badge-success" href="/daftar-online-rs-ananda-bekasi/">Daftar online rs ananda bekasi</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/daftar-online-rs-izza-karawang/">Daftar online rs izza karawang</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/daftar-online-ktp-kab-bandung/">Daftar online ktp kab bandung</a></span>
+<span class="navi text-left"><a class="badge badge-dark" href="/daftar-online-rs-siloam-bekasi-timur/">Daftar online rs siloam bekasi timur</a></span></p>
+<p>Contoh yang dibahas kali ini adalah mengenai penentuan penerimaan pengajuan kredit sepeda motor baru. Seperti namanya metode ini mengasumsikan bahwa setiap atribut dari data tidak bergantung satu sama lain. Xn 𝑛 2 Keterangan. Nilai mean dapat ditentukan dengan membagi penjumlahan data yang ada dengan banyaknya data 10. ID X1 X2 X3 Class 1 Yes Single 125 No 2 No Married 100 No 3 No Single 70 No 4 Yes Married 120 No 5. Metode Naïve Bayes merupakan metode yang memanfaatkan nilai probabilitas dari data Classification dokumen contoh sebelumnya.</p>
+<h3 id="naïve-bayes-merupakan-pengklasifikasian-dengan-metode-probabilitas-dan-statistik-yang-dikemukakan-oleh-ilmuwan-i-nggris-thomas-bayes-yaitu-memprediksi-peluang-dimasa-depan-berdasarkan-pengalaman-sebelumnya-sehingga-dikenal-sebagai-teorema-bayes">Naïve bayes merupakan pengklasifikasian dengan metode probabilitas dan statistik yang dikemukakan oleh ilmuwan i nggris Thomas Bayes yaitu memprediksi peluang dimasa depan berdasarkan pengalaman sebelumnya sehingga dikenal sebagai teorema bayes.</h3><p>Nilai rata-rata mean x i. Kelas 2 c2 pCc Rumus Naive Bayes nya menjadi. Algoritma Naive Bayes adalah salah satu algoritma yang digunakan untuk klasifikasi atau pengelompokan data tetapi bisa juga digunakan untuk pengambilan keputusan. Contoh Kasus Perhitungan Naïve Bayes Untuk memudahkan dalam pemahaman perhitungan Naïve Bayes secara manual akan dibuat studi kasus dengan menggunakan salah satu data testing yang dipilih secara random. P no 414 02857. Contoh perhitungan naive bayes tabel trening ipk status status status no jenis kelamin semester mahasiswa prenikahan kelulusan 1-6 1 laki - laki mahasiswa belum 317 tepat 2 laki - laki bekerja belum 330 tepat 3 perempuan mahasiswa belum 301 tepat 4 perempuan mahasiswa menikah 325 tepat 5 laki - laki bekerja menikah 320 tepat 6 laki - laki bekerja menikah 250 terlambat 7 perempuan bekerja.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-p7whypQW9PI/WZpkzEtvRLI/AAAAAAAABIg/9X0K3zKj63UbA5Yt-ioWGqILwX2_JHkZwCLcBGAs/s1600/rumus.png" alt="Contoh Perhitungan Naive Bayes Classification Untuk Mendeteksi Kerusakan Laptop Skripsi Teknik Informatika" title="Contoh Perhitungan Naive Bayes Classification Untuk Mendeteksi Kerusakan Laptop Skripsi Teknik Informatika" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: ilmuskripsi.com</p>
+<p>Langkah pertama dalam perhitungan naive bayes adalah mencari probabilitas setiap nilai atribut sesuai data latih. Teori keputusan bayes adalah. 09 054 PYX PYX PX 0201 002 Bila diketahui seseorang merokok maka dia menderita sakit paru-paru karana PYX lebih besar dari PYX. Naive Bayes method was a method that could be applied to calculating the probability of graduation. Total nilai bayes dari K3 yaitu.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://3.bp.blogspot.com/-1COq98KH87g/WZpcAMCA3bI/AAAAAAAABH0/XbfuxtgdwYogshKasmv538Bno-GWUNJhwCLcBGAs/s1600/rumus.png" alt="Contoh Perhitungan Naive Bayes Classification Untuk Mendeteksi Kerusakan Laptop Skripsi Teknik Informatika" title="Contoh Perhitungan Naive Bayes Classification Untuk Mendeteksi Kerusakan Laptop Skripsi Teknik Informatika" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: ilmuskripsi.com</p>
+<p>Naïve bayes merupakan pengklasifikasian dengan metode probabilitas dan statistik yang dikemukakan oleh ilmuwan i nggris Thomas Bayes yaitu memprediksi peluang dimasa depan berdasarkan pengalaman sebelumnya sehingga dikenal sebagai teorema bayes. Metode Naïve Bayes Classification merupakan metode data mining yang dapat memberikan penentuan klasifikasi status gizi orang dewasa dan menguji konsistensinya. Metode Naïve Bayes memanfaatkan data training untuk menghasilkan probabilitas setiap kriteria untuk class yang berbeda sehingga nilai-nilai probabilitas dari kriteria tersebut dapat dioptimalkan untuk memprediksi suatu kondisi berdasarkan proses klasifikasi yang dilakukan oleh metode Naïve Bayes. Total nilai bayes dari K3 yaitu. Metode pengklasifikasian dg menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes yaitu memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://imgv2-2-f.scribdassets.com/img/document/41507395/original/e5dc7a296e/1624965812?v=1" alt="Contoh Perhitungan Untuk Naive Bayes" title="Contoh Perhitungan Untuk Naive Bayes" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: id.scribd.com</p>
+<p>Berikut probabilitas kemunculan nilai atribut diketahui. Nilai mean dapat ditentukan dengan membagi penjumlahan data yang ada dengan banyaknya data 10. Berikut simpulan yang dapat diambil dari contoh kasus dengan metode Naïve Bayes tersebut. Metode naïve bayes merupakan salah satu metode yang terdapat pada teknik klasifikasi. Dibawah ini merupakan contoh perhitungan manual metode naive bayes pada data training dan mencari hasil untuk data testing.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://informatikalogi.com/wp-content/uploads/2017/04/contoh-2-algoritma-naive-bayes.jpg" alt="Algoritma Naive Bayes Informatikalogi" title="Algoritma Naive Bayes Informatikalogi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: informatikalogi.com</p>
+<p>μx1 x2 x3. Berikut probabilitas kemunculan nilai atribut label. Total nilai bayes dari K3 yaitu. The Naive Bayes method implementation which applied to a National Exam graduation prediction application had expected to help predict the probability of graduation that would be gained by each student especially the Junior High School students. Kriteria yang digunakan dalam penentuan klasifikasi status.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://informatikalogi.com/wp-content/uploads/2017/04/standart-deviasi-naive-bayes.jpg" alt="Algoritma Naive Bayes Informatikalogi" title="Algoritma Naive Bayes Informatikalogi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: informatikalogi.com</p>
+<p>The Naive Bayes method implementation which applied to a National Exam graduation prediction application had expected to help predict the probability of graduation that would be gained by each student especially the Junior High School students. Perhitungan Naive Bayes Interval 1 i 1 Interval 2 i 2 Kelas 1 c 1 ket. Dibawah ini merupakan contoh perhitungan manual metode naive bayes pada data training dan mencari hasil untuk data testing. Dipetakan penggambaran perhitungan Naive Bayesnya seperti berikut. Contoh perhitungan naive bayes tabel trening ipk status status status no jenis kelamin semester mahasiswa prenikahan kelulusan 1-6 1 laki - laki mahasiswa belum 317 tepat 2 laki - laki bekerja belum 330 tepat 3 perempuan mahasiswa belum 301 tepat 4 perempuan mahasiswa menikah 325 tepat 5 laki - laki bekerja menikah 320 tepat 6 laki - laki bekerja menikah 250 terlambat 7 perempuan bekerja.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://image.slidesharecdn.com/datamining6-naivebayes-190822075441/95/data-mining-naive-bayes-11-638.jpg?cb=1566460528" alt="Data Mining Naive Bayes" title="Data Mining Naive Bayes" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideshare.net</p>
+<p>Sambil Mengingat Kembali Tentang Naive bayes. Dipetakan penggambaran perhitungan Naive Bayesnya seperti berikut. Dengan metode bayes dapat dihitung. Berikut simpulan yang dapat diambil dari contoh kasus dengan metode Naïve Bayes tersebut. ID X1 X2 X3 Class 1 Yes Single 125 No 2 No Married 100 No 3 No Single 70 No 4 Yes Married 120 No 5.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-VLvgAnIi7mc/XrzW99kIURI/AAAAAAAAA74/u1Ao_tiUgvsYPNBrVL9eMpPkYDk1l0MCACLcBGAsYHQ/s1600/irama.PNG" alt="Contoh Hitung Manual Algoritma Naive Bayes Untuk Data Numerik Menggunakan Ms Excel Kita Informatika" title="Contoh Hitung Manual Algoritma Naive Bayes Untuk Data Numerik Menggunakan Ms Excel Kita Informatika" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kitainformatika.com</p>
+<p>PYX PYXPX 06. Contoh perhitungan naive bayes tabel trening ipk status status status no jenis kelamin semester mahasiswa prenikahan kelulusan 1-6 1 laki - laki mahasiswa belum 317 tepat 2 laki - laki bekerja belum 330 tepat 3 perempuan mahasiswa belum 301 tepat 4 perempuan mahasiswa menikah 325 tepat 5 laki - laki bekerja menikah 320 tepat 6 laki - laki bekerja menikah 250 terlambat 7 perempuan bekerja. Mean adalah nilai rata-rata dari beberapa buah data. HMAP diartikan mencari probabilitas terbesar. Jumlah sampel Contoh perhitungan mean pada piagam.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://informatikalogi.com/wp-content/uploads/2017/04/contoh-kasus-4-naive-bayes.jpg" alt="Algoritma Naive Bayes Informatikalogi" title="Algoritma Naive Bayes Informatikalogi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: informatikalogi.com</p>
+<p>Perhitungan Naive Bayes Interval 1 i 1 Interval 2 i 2 Kelas 1 c 1 ket. Nilai x ke-i n. Metode pengklasifikasian dg menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes yaitu memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes. Tabel 31 Data Training Tabel 32 Data Testing PADA TAHAP 1 YAITU MENGHITUNG JUMLAH KELAS LABEL Identifikasi COCCUS 39 Identifikasi ECOLI 39 Identifikasi CAMPYLO 39 NO KETERANGAN A B C D. Naïve Bayes Classifier merupakan sebuah metoda klasifikasi yang berakar pada teorema Bayes.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://informatikalogi.com/wp-content/uploads/2017/04/naive-bayes-table.jpg" alt="Algoritma Naive Bayes Informatikalogi" title="Algoritma Naive Bayes Informatikalogi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: informatikalogi.com</p>
+<p>Total K3 KK3 G1 KK3 G3 Total K3 05 05 1 Menjumlahkan hasil nilai bayes dari K1 dan K3 Hasil Total Total Bayes K1 Total Bayes K3 05 1 15 Langkah 4. Seperti namanya metode ini mengasumsikan bahwa setiap atribut dari data tidak bergantung satu sama lain. PYX PYXPX 06. Contoh Kasus Perhitungan Naïve Bayes Untuk memudahkan dalam pemahaman perhitungan Naïve Bayes secara manual akan dibuat studi kasus dengan menggunakan salah satu data testing yang dipilih secara random. Mean adalah nilai rata-rata dari beberapa buah data.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://informatikalogi.com/wp-content/uploads/2017/04/contoh-1-algoritma-naive-bayes.jpg" alt="Algoritma Naive Bayes Informatikalogi" title="Algoritma Naive Bayes Informatikalogi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: informatikalogi.com</p>
+<p>Naïve bayes merupakan pengklasifikasian dengan metode probabilitas dan statistik yang dikemukakan oleh ilmuwan i nggris Thomas Bayes yaitu memprediksi peluang dimasa depan berdasarkan pengalaman sebelumnya sehingga dikenal sebagai teorema bayes. The Naive Bayes method implementation which applied to a National Exam graduation prediction application had expected to help predict the probability of graduation that would be gained by each student especially the Junior High School students. Metode naïve bayes merupakan salah satu metode yang terdapat pada teknik klasifikasi. Kelas 2 c2 pCc Rumus Naive Bayes nya menjadi. P no 414 02857.</p>
+<p>This site is an open community for users to share their favorite wallpapers on the internet, all images or pictures in this website are for personal wallpaper use only, it is stricly prohibited to use this wallpaper for commercial purposes, if you are the author and find this image is shared without your permission, please kindly raise a DMCA report to Us.</p>
+<p>If you find this site value, please support us by sharing this posts to your favorite social media accounts like Facebook, Instagram and so on or you can also bookmark this blog page with the title contoh perhitungan metode naive bayes by using Ctrl + D for devices a laptop with a Windows operating system or Command + D for laptops with an Apple operating system. If you use a smartphone, you can also use the drawer menu of the browser you are using. Whether it&rsquo;s a Windows, Mac, iOS or Android operating system, you will still be able to bookmark this website.</p>
+</article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/contoh-soal-narrative-text-pilihan-ganda-dan-pembahasan-serta-jawaban/">&laquo;&laquo;&nbsp;Contoh Soal Narrative Text Pilihan Ganda Dan Pembahasan Serta Jawaban</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/latihan-soal-kelas-6-semester-2/">Latihan Soal Kelas 6 Semester 2&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Read next</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/rpp-daring-kelas-1-dicari-guru/"><img height="80" src="/img/placeholder.svg" data-src="https://dicariguru.com/wp-content/uploads/2020/07/rppd1.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/rpp-daring-kelas-1-dicari-guru/">Rpp Daring Kelas 1 Dicari Guru</a>
+                        </h2>
+                        <small class="text-muted">Jun 08 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/tes-tiu-pdf/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/564x/a4/d5/6f/a4d56fb52da6d3a5a13ef0fbb85e4d45.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/tes-tiu-pdf/">Tes Tiu Pdf</a>
+                        </h2>
+                        <small class="text-muted">Aug 08 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/manfaat-globalisasi-hukum/"><img height="80" src="/img/placeholder.svg" data-src="https://asset.kompas.com/crops/K0QFfo45Sfwgw75b1kPWUz46wv0=/96x0:913x545/780x390/data/photo/2019/12/24/5e014e0be4462.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/manfaat-globalisasi-hukum/">Manfaat Globalisasi Hukum</a>
+                        </h2>
+                        <small class="text-muted">Jul 09 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/pengajuan-form-permintaan-barang/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/82/b9/4e/82b94e308a27ca4a0c9e8afd6a79ea3a.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/pengajuan-form-permintaan-barang/">Pengajuan Form Permintaan Barang</a>
+                        </h2>
+                        <small class="text-muted">Aug 10 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/efek-vaksin-astrazeneca/"><img height="80" src="/img/placeholder.svg" data-src="https://cdn.antaranews.com/cache/infografis/1140x2100/2021/03/09/20210309kedatangan-astrazeneca_1.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/efek-vaksin-astrazeneca/">Efek Vaksin Astrazeneca</a>
+                        </h2>
+                        <small class="text-muted">Apr 22 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/soal-recount-text-itapuih/"><img height="80" src="/img/placeholder.svg" data-src="https://3.bp.blogspot.com/-uxcBjiTfClY/WFkQMXd0ZrI/AAAAAAAAHto/8SM0Xw57D30qzyOv25KiFUtLAzhg8n4aACLcB/s1600/Recount-Text.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/soal-recount-text-itapuih/">Soal Recount Text Itapuih</a>
+                        </h2>
+                        <small class="text-muted">Aug 02 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://materiguru.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://materiguru.github.io">MATERI GURU</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

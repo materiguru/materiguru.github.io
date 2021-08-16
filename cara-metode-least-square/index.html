@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>Cara Metode Least Square | MATERI GURU</title>
+<meta name="url" content="https://materiguru.github.io/cara-metode-least-square/" />
+<meta property="og:url" content="https://materiguru.github.io/cara-metode-least-square/">
+<meta property="article:author" content="Heru"> 
+<meta name="author" content="Heru">
+<link rel="canonical" href="https://materiguru.github.io/cara-metode-least-square/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+    
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "Cara Metode Least Square",
+    "headline": "Cara Metode Least Square",
+    "alternativeHeadline": "",
+    "description": "Cara Metode Least Square. Maka ramalan penjualan untuk tahun 2007. Persamaan analitik berbasiskan teori dan fenomena fisik sistem yang teramati 2.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/materiguru.github.io\/cara-metode-least-square\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "copyrightHolder" : "MATERI GURU",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-07-02T18:26:11.00Z",
+    "datePublished": "2021-07-02T18:26:11.00Z",
+    "dateModified": "2021-08-16T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "MATERI GURU",
+        "url": "https://materiguru.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/materiguru.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://materiguru.github.io/logo.png",
+    "url" : "https:\/\/materiguru.github.io\/cara-metode-least-square\/",
+    "wordCount" : "1177",
+    "genre" : [ "soal" ],
+    "keywords" : [ "Cara" , "metode" , "least" , "square" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://materiguru.github.io"><span style="text-transform: capitalize;font-weight: bold;">MATERI GURU</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/belajar/" title="Belajar">Belajar</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/pengetahuan/" title="Pengetahuan">Pengetahuan</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/sekolah/" title="Sekolah">Sekolah</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://materiguru.github.io/categories/belajar"/>Belajar</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">Cara Metode Least Square</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Heru <span class="text-muted d-block mt-1">Jul 02, 2021 · <span class="reading-time">6 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343906060978/peramalan-penjualan/metode-least-square/LEAST%20SQUARE%20PERHITUNGAN.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" alt="Cara Metode Least Square"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p></p><script type='text/javascript' src='//pl16516212.highperformancecpm.com/b7/0a/80/b70a809db83a9c6a5c25d24145477fef.js'></script>
+<p><strong>Cara Metode Least Square</strong>. Maka ramalan penjualan untuk tahun 2007. Persamaan analitik berbasiskan teori dan fenomena fisik sistem yang teramati 2. Estimasi Parameter Metode Generalized Least Square Pada Pemodelan Persamaan Struktural. 31 Metode Least Square Kuadrat Terkecil Metode Least Square merupakan salah satu metode berupa data deret berkala atau time series yang mana dibutuhkan data-data penjualan dimasa lampau untuk melakukan peramalan penjualan dimasa mendatang sehingga dapat ditentukan hasilnya.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343906013479/peramalan-penjualan/metode-least-square/LEAST%20SQUARE%20FUNGSI%20DASAR.jpg" alt="Metode Least Square Referensi Anggaran" title="Metode Least Square Referensi Anggaran" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Metode Least Square Referensi Anggaran From sites.google.com</p>
+<p><span class="navi text-left"><a class="badge badge-success" href="/cara-metode-garis-lurus/">Cara metode garis lurus</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/cek-penerima-bantuan-sembako-2021/">Cek penerima bantuan sembako 2021</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/cerita-rakyat-maling-kundang/">Cerita rakyat maling kundang</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/contekan-in-english/">Contekan in english</a></span></p>
+<p>31 Metode Least Square Kuadrat Terkecil Metode Least Square merupakan salah satu metode berupa data deret berkala atau time series yang mana dibutuhkan data-data penjualan dimasa lampau untuk melakukan peramalan penjualan dimasa mendatang sehingga dapat ditentukan hasilnya. Semua metode perhitungan kwadrat terkecil atau least square adjustment menggunakan dasar kwadrat dari koreksi pengukuran harus minimum. Karena metode ini dapat memberikan hubungan fungsional antara fungsi asli dengan aproksimasi sedemikian rupa sehingga mendapatkan nilai error yang minimum. Jurusan Matematika Fakultas Sains dan Teknologi Universitas Islam Negeri Maulana Malik Ibrahim Malang. Structural Equation Modeling Generalized Least Square. Y 2007 22370 jadi ramalan penjualan menjadi 20619 unit.</p>
+<h3 id="metode-least-square-adalah-suatu-metode-yang-paling-luas-digunakan-untuk-menentukan-persamaan-trend-data">Metode Least Square adalah suatu metode yang paling luas digunakan untuk menentukan persamaan trend data.</h3><p>Metode Least Square adalah suatu metode yang paling luas digunakan untuk menentukan persamaan trend data. Y a bX. Maka ramalan penjualan untuk tahun 2007. Maka persamaan least squarenya adalah. Analisis Data Menggunakan Partial Least Square PLS Part 2 Bagian ini merupakan revisi dari tulisan sebelumnya yaitu PLS Part 1 dikarenakan beberapa pertimbangan dosen pembimbing akhirnya metode analisis data ditambahkan Uji Asumsi combine with SPSS Data yang diperoleh dari hasil penelitian kemudian diolah menggunakan teknik analisis data yaitu Partial Least Square PLS. Least Square adalah metode peramalan yang digunakan.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://imgv2-1-f.scribdassets.com/img/document/83884135/original/791c99a079/1623588229?v=1" alt="Latihan Soal Ramalan Penjualan Metode Least Square Candra" title="Latihan Soal Ramalan Penjualan Metode Least Square Candra" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: id.scribd.com</p>
+<p>Analisis Data Menggunakan Partial Least Square PLS Part 2 Bagian ini merupakan revisi dari tulisan sebelumnya yaitu PLS Part 1 dikarenakan beberapa pertimbangan dosen pembimbing akhirnya metode analisis data ditambahkan Uji Asumsi combine with SPSS Data yang diperoleh dari hasil penelitian kemudian diolah menggunakan teknik analisis data yaitu Partial Least Square PLS. A 198000 11 18000. Y 2007 18000 43636 6 Y 2007 18000 261818. Cara buatnya sebagai berikut. Maka ramalan penjualan untuk tahun 2007.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343906127987/peramalan-penjualan/metode-least-square/LEAST%20SQUARE%20PERHITUNGAN%202.jpg" alt="Metode Least Square Referensi Anggaran" title="Metode Least Square Referensi Anggaran" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: sites.google.com</p>
+<p>Least Square adalah metode peramalan yang digunakan. Persamaan empirik lebih berbasiskan hubungan antara input - output sistem 0 Persamaan empirik dianggap sesuai jika error-nya kecil dan bentuk. Analisis Data Menggunakan Partial Least Square PLS Part 2 Bagian ini merupakan revisi dari tulisan sebelumnya yaitu PLS Part 1 dikarenakan beberapa pertimbangan dosen pembimbing akhirnya metode analisis data ditambahkan Uji Asumsi combine with SPSS Data yang diperoleh dari hasil penelitian kemudian diolah menggunakan teknik analisis data yaitu Partial Least Square PLS. Metode Least Square. Maka ramalan penjualan untuk tahun 2007.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://data03.123doks.com/thumbv2/123dok/001/645/1645433/cover.webp" alt="Latihan Soal Ramalan Penjualan Metode Least Square Candra" title="Latihan Soal Ramalan Penjualan Metode Least Square Candra" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: 123dok.com</p>
+<p>Y 1995 18000 43636 -13. Persamaan empirik lebih berbasiskan hubungan antara input - output sistem 0 Persamaan empirik dianggap sesuai jika error-nya kecil dan bentuk. Y 2007 22370 jadi ramalan penjualan menjadi 20619 unit. Analisis Data Menggunakan Partial Least Square PLS Part 2 Bagian ini merupakan revisi dari tulisan sebelumnya yaitu PLS Part 1 dikarenakan beberapa pertimbangan dosen pembimbing akhirnya metode analisis data ditambahkan Uji Asumsi combine with SPSS Data yang diperoleh dari hasil penelitian kemudian diolah menggunakan teknik analisis data yaitu Partial Least Square PLS. Ramalan penjualan tahun sebelumnya misalkan tahun 1995 adalah.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://data03.123doks.com/thumbv2/123dok/000/087/87782/cover.webp" alt="Latihan Soal Ramalan Penjualan Metode Least Square Candra" title="Latihan Soal Ramalan Penjualan Metode Least Square Candra" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: 123dok.com</p>
+<p>Dari perhitungan di atas dicari nilai a dan b untuk mendapatkan fungsi persamaan peramalan metode Least Square sebagai berikut. Y 1995 18000 43636 -13. 31 Metode Least Square Kuadrat Terkecil Metode Least Square merupakan salah satu metode berupa data deret berkala atau time series yang mana dibutuhkan data-data penjualan dimasa lampau untuk melakukan peramalan penjualan dimasa mendatang sehingga dapat ditentukan hasilnya. Y 19330 27636X. Y 18000 43636X.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://data03.123doks.com/thumbv2/123dok/000/087/87716/cover.webp" alt="Latihan Soal Ramalan Penjualan Metode Least Square Candra" title="Latihan Soal Ramalan Penjualan Metode Least Square Candra" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: 123dok.com</p>
+<p>Sebelum buat grafik kalian buat grafik yang isinya x y x2 y2 dan xy dulu urutan kolom x sama y jangan kebalik ya nanti grafiknya jadi kebalik. Persamaan analitik berbasiskan teori dan fenomena fisik sistem yang teramati 2. Metode Least Square. Metode yang digunakan untuk analisis time series adalah Metode Garis Linier Secara Bebas Free Hand Method Metode Setengah Rata-Rata Semi Average Method Metode Rata-Rata Bergerak Moving Average Method dan Metode Kuadrat Terkecil Least Square Method. Structural Equation Modeling Generalized Least Square.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343906013479/peramalan-penjualan/metode-least-square/LEAST%20SQUARE%20FUNGSI%20DASAR.jpg" alt="Metode Least Square Referensi Anggaran" title="Metode Least Square Referensi Anggaran" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: sites.google.com</p>
+<p>Maka ramalan penjualan untuk tahun 2007. Cara buatnya sebagai berikut. Maka persamaan least squarenya adalah. Metode yang umum digunakan adalah metode Admiralty sedangkan metode lain jarang digunakan. Misalnya kita melakukan pengukuran jarak antar dua titik sebanyak 3 tiga kali l1 l2 dan l3 sedangkan jarak sebenarnya kedua titik tersebut adalah la.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slideplayer.info/slide/12282376/72/images/9/Analisis&#43;menggunakan&#43;metode&#43;Least&#43;Square.jpg" alt="Contoh Soal Dan Jawaban Metode Least Square" title="Contoh Soal Dan Jawaban Metode Least Square" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: mkh.sch.id</p>
+<p>Y 2007 18000 43636 6 Y 2007 18000 261818. 31 Metode Least Square Kuadrat Terkecil Metode Least Square merupakan salah satu metode berupa data deret berkala atau time series yang mana dibutuhkan data-data penjualan dimasa lampau untuk melakukan peramalan penjualan dimasa mendatang sehingga dapat ditentukan hasilnya. Langkah pertama melakukan penyusunan data pengamatan pasang surut 15 piantan setiap jam selama 15 hari pengamatan dimana data yang digunakan adalah data pengamatan pada tanggal 30. Maka persamaan least squarenya adalah. Thats why we call this method least square estimation.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343902944367/peramalan-penjualan/metode-trend-bebas/FREEHAND%20DATA.jpg" alt="Metode Least Square Referensi Anggaran" title="Metode Least Square Referensi Anggaran" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: sites.google.com</p>
+<p>Cara buatnya sebagai berikut. Karena metode ini dapat memberikan hubungan fungsional antara fungsi asli dengan aproksimasi sedemikian rupa sehingga mendapatkan nilai error yang minimum. Y 2007 2061818 dibulatkan menjadi 20619 unit. Grafik yang akan gw buat adalah Scatter. Jurusan Matematika Fakultas Sains dan Teknologi Universitas Islam Negeri Maulana Malik Ibrahim Malang.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slideplayer.info/slide/12282376/72/images/13/Penyelesaian&#43;%3A&#43;Analisis&#43;menggunakan&#43;metode&#43;Least&#43;Square.jpg" alt="Analisa Data Berkala Dengan Metode Least Square Ppt Download" title="Analisa Data Berkala Dengan Metode Least Square Ppt Download" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideplayer.info</p>
+<p>Kenapa saya menggunakan metode Least-Square. Misalnya kita melakukan pengukuran jarak antar dua titik sebanyak 3 tiga kali l1 l2 dan l3 sedangkan jarak sebenarnya kedua titik tersebut adalah la. Ramalan penjualan tahun sebelumnya misalkan tahun 1995 adalah. I Abdul Aziz MSi. Dengan berkembangnya teknologi komputer maka berkembang pula metode alternatif lain.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://sites.google.com/site/penganggaranperusahaan/_/rsrc/1343906060978/peramalan-penjualan/metode-least-square/LEAST%20SQUARE%20PERHITUNGAN.jpg" alt="Metode Least Square Referensi Anggaran" title="Metode Least Square Referensi Anggaran" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: sites.google.com</p>
+<p>330 maka persamaan least squarenya adalah. Karena pada dasarnya pendekatan terbaik adalah pendekatan yang meminimalkan fungsi asli dengan aproksimasi. 330 maka persamaan least squarenya adalah. Persamaan empirik lebih berbasiskan hubungan antara input - output sistem 0 Persamaan empirik dianggap sesuai jika error-nya kecil dan bentuk. Ramalan penjualan tahun sebelumnya misalkan tahun 1995 adalah.</p>
+<p>This site is an open community for users to submit their favorite wallpapers on the internet, all images or pictures in this website are for personal wallpaper use only, it is stricly prohibited to use this wallpaper for commercial purposes, if you are the author and find this image is shared without your permission, please kindly raise a DMCA report to Us.</p>
+<p>If you find this site serviceableness, please support us by sharing this posts to your own social media accounts like Facebook, Instagram and so on or you can also bookmark this blog page with the title cara metode least square by using Ctrl + D for devices a laptop with a Windows operating system or Command + D for laptops with an Apple operating system. If you use a smartphone, you can also use the drawer menu of the browser you are using. Whether it&rsquo;s a Windows, Mac, iOS or Android operating system, you will still be able to bookmark this website.</p>
+</article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/efek-vaksin-untuk-penyintas-corona/">&laquo;&laquo;&nbsp;Efek Vaksin Untuk Penyintas Corona</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/soal-limit-trigonometri-math-lab/">Soal Limit Trigonometri Math Lab&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Read next</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/susunan-pengurus-universitas/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/6c/4c/9e/6c4c9e5e8b2461e56df538c785b78fc1.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/susunan-pengurus-universitas/">Susunan Pengurus Universitas</a>
+                        </h2>
+                        <small class="text-muted">Apr 29 . 4 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/pilihan-ganda-contoh-soal-ujian-dinas/"><img height="80" src="/img/placeholder.svg" data-src="https://cdn2.cute766.info/file/images/main/1546443763/dWdnY2Y6Ly92enRpMi0yLXMuZnBldm9xbmZmcmdmLnBiei92enQvcWJwaHpyYWcvMzcyMDI1NjUxL2JldnR2YW55Lzc2NjFybjNyODUvMTU1MTgzMTk5NA==/contoh-soal-ujian-dinas-tingkat-2-pdf-contoh-soal-terbaru.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/pilihan-ganda-contoh-soal-ujian-dinas/">Pilihan Ganda Contoh Soal Ujian Dinas</a>
+                        </h2>
+                        <small class="text-muted">May 17 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/pendidikan-pancasila-dan_70/"><img height="80" src="/img/placeholder.svg" data-src="http://kabarwashliyah.com/cms/wp-content/uploads/2013/06/Garuda-Pancasila-540x350.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/pendidikan-pancasila-dan_70/">Pendidikan Pancasila Dan_70</a>
+                        </h2>
+                        <small class="text-muted">May 10 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/kd-kelas-5-semester-1/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/23/bd/13/23bd13948c847b047b7353ad632ad30c.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/kd-kelas-5-semester-1/">Kd Kelas 5 Semester 1</a>
+                        </h2>
+                        <small class="text-muted">Jul 27 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/contoh-soal-metode-harga-pokok-pesanan-full-costing/"><img height="80" src="/img/placeholder.svg" data-src="https://slideplayer.info/slide/11883328/66/images/4/Biaya&#43;Tenaga&#43;Kerja&#43;Upah&#43;Langsung&#43;Pesanan&#43;Upah&#43;Langsung&#43;Pesanan&#43;102..jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/contoh-soal-metode-harga-pokok-pesanan-full-costing/">Contoh Soal Metode Harga Pokok Pesanan Full Costing</a>
+                        </h2>
+                        <small class="text-muted">Jun 10 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/cara-mendapatkan-wifi-gratis/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/00/ea/93/00ea93bcf8ac1c1ee9220cd39fc5680f.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/cara-mendapatkan-wifi-gratis/">Cara Mendapatkan Wifi Gratis</a>
+                        </h2>
+                        <small class="text-muted">Jul 13 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://materiguru.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://materiguru.github.io">MATERI GURU</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

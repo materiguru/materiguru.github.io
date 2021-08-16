@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>Contoh Metode Moving Average | MATERI GURU</title>
+<meta name="url" content="https://materiguru.github.io/contoh-metode-moving-average/" />
+<meta property="og:url" content="https://materiguru.github.io/contoh-metode-moving-average/">
+<meta property="article:author" content="Budi"> 
+<meta name="author" content="Budi">
+<link rel="canonical" href="https://materiguru.github.io/contoh-metode-moving-average/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+    
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "Contoh Metode Moving Average",
+    "headline": "Contoh Metode Moving Average",
+    "alternativeHeadline": "",
+    "description": "Contoh Metode Moving Average. Tahun 2011 dengan moving average. Moving Average Plot for C1. Kali ini akan dibahas perbandingan metode single moving average dengan single exponential smoothing.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/materiguru.github.io\/contoh-metode-moving-average\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "copyrightHolder" : "MATERI GURU",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-05-09T09:54:25.00Z",
+    "datePublished": "2021-05-09T09:54:25.00Z",
+    "dateModified": "2021-08-16T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "MATERI GURU",
+        "url": "https://materiguru.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/materiguru.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://materiguru.github.io/logo.png",
+    "url" : "https:\/\/materiguru.github.io\/contoh-metode-moving-average\/",
+    "wordCount" : "1145",
+    "genre" : [ "siswa" ],
+    "keywords" : [ "Contoh" , "metode" , "moving" , "average" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://materiguru.github.io"><span style="text-transform: capitalize;font-weight: bold;">MATERI GURU</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/belajar/" title="Belajar">Belajar</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/pengetahuan/" title="Pengetahuan">Pengetahuan</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/sekolah/" title="Sekolah">Sekolah</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://materiguru.github.io/categories/pengetahuan"/>Pengetahuan</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">Contoh Metode Moving Average</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Budi <span class="text-muted d-block mt-1">May 09, 2021 · <span class="reading-time">6 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://i1.wp.com/ilmumanajemenindustri.com/wp-content/uploads/2018/01/Forecasting-dengan-Metode-Moving-Average.jpg?fit=640%2C280&amp;amp;ssl=1" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" alt="Contoh Metode Moving Average"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p></p><script type='text/javascript' src='//pl16516212.highperformancecpm.com/b7/0a/80/b70a809db83a9c6a5c25d24145477fef.js'></script>
+<p><strong>Contoh Metode Moving Average</strong>. Tahun 2011 dengan moving average. Moving Average Plot for C1. Kali ini akan dibahas perbandingan metode single moving average dengan single exponential smoothing. Moving Average Forecasting Metode time series terdiri dari beberapa metode salah satunya adalah moving average forecasting atau rata-rata bergerak.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://lh5.googleusercontent.com/proxy/cg6FyPEHVQwofYXjX8yryEp0pOPKXpwZ0Hu7z4G0af0KgsxPM8DYcl__cowJ1W9EnMfKRh7MUMJLbo-ZHqb0OWjvfeMZ4ZxuDfKwJ-Kbl_XGzMu_m_jHaQJUtvGpxkI9XwX8iU-bSt_dyRzipHMs=w1200-h630-p-k-no-nu" alt="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" title="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru From perantiguru.com</p>
+<p><span class="navi text-left"><a class="badge badge-dark" href="/cara-mengatasi-mata-bengkak/">Cara mengatasi mata bengkak</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/cara-menggunakan-zoom-saat-presentasi/">Cara menggunakan zoom saat presentasi</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/cara-mengatasi-gigi-berlubang-parah/">Cara mengatasi gigi berlubang parah</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/cara-mengatasi-asam-lambung-saat-hamil/">Cara mengatasi asam lambung saat hamil</a></span></p>
+<p>Anda akan meramalkan penjualan pada. MINITAB menampilkan beberapa kriteria ketepatan peramalan yaitu. Forecasting method used is Single Moving Average by taking orange puzzle sales data from January 2018 to June 2019 with a value of 678 and 9 which will be used as calculation data in the SMA method determine the results of historical data processing using the SMA method. Contoh soal dan jawaban peramalan penjualan metode moving average. Asumsikan bahwa seorang manajer keuangan memiliki data aliran kas masuk cash inflow berikut ini. Metode moving average digunakan jika data masa lalu merupakan data yang tidak memiliki unsur trend atau faktor musiman.</p>
+<h3 id="asumsikan-bahwa-seorang-manajer-keuangan-memiliki-data-aliran-kas-masuk-cash-inflow-berikut-ini">Asumsikan bahwa seorang manajer keuangan memiliki data aliran kas masuk cash inflow berikut ini.</h3><p>Contoh soal moving average. Pada tabel di atas jumlah obervasi m yaitu 19 lebih banyak dibanding dengan metode simple moving average 3 bulanan 16 karena pada metode eksponensial perhitungan ramalan dapat dimulai dari data pada periode awal. Ibu Shabrina mempunyai usaha di bidang penjualan Kue Ners ibu Shabrina ingin memperkirakan forecasting berapa kue yang bisa Ibu Shabrina jual di bulan Januari 2022. Forecasting method used is Single Moving Average by taking orange puzzle sales data from January 2018 to June 2019 with a value of 678 and 9 which will be used as calculation data in the SMA method determine the results of historical data processing using the SMA method. Metode lainnya dikenal sebagai weighted moving average yang memberikan penekanan weight yang berbeda pada setiap nilai data dan kemudian menghitung bobot yang paling besar untuk pengamatan yang paling baru. Sementara itu nilai penekanan bobotweight akan mengalami penurunan untuk data yang lebih.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://miro.medium.com/max/516/1*s3AWRB-kr2xKJDbyMBe43Q.png" alt="Peramalan Dengan Metode Single Moving Average Dan Mencari Nilai Mse By Reza Yusuf Bahtiar Medium" title="Peramalan Dengan Metode Single Moving Average Dan Mencari Nilai Mse By Reza Yusuf Bahtiar Medium" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: medium.com</p>
+<p>Metode moving average digunakan jika data masa lalu merupakan data yang tidak memiliki unsur trend atau faktor musiman. Berikut ini contoh soal metode average dalam bidang bidang akuntansi yang bisa dipelajari dalam pembuatan laporan keuangan perusahaan dagang. 102 Contoh Soal Metode Moving Average Pembahasan. Sebagai contoh empat periode SMA dengan harga 12640 12641 12642 dan 12641 akan menghasilkan pergerakan rata-rata 12641 jika dihitung dengan formula di atas. Moving Average Plot for C1.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://i0.wp.com/image3.slideserve.com/5604786/slide5-l.jpg?resize=650,400" alt="Contoh Soal Metode Moving Average Cara Golden" title="Contoh Soal Metode Moving Average Cara Golden" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: caragolden.com</p>
+<p>Langkah -langkah di dalam menyelesaikan contoh soal Weighted Moving Average di atas sebagai berikut. Mean Absolute Percentage Error. Tahun 2011 dengan moving average. Moving average forecasting banyak digunakan untuk. Moving Average Forecasting Metode time series terdiri dari beberapa metode salah satunya adalah moving average forecasting atau rata-rata bergerak.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://belajarekonomi.com/wp-content/uploads/2020/06/Pengertian-Moving-Average-Rata-Rata-Bergerak-Rumus-Moving-Average.png" alt="Pengertian Moving Average Rata Rata Bergerak Dan Rumus Moving Average Belajar Ekonomi" title="Pengertian Moving Average Rata Rata Bergerak Dan Rumus Moving Average Belajar Ekonomi" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: belajarekonomi.com</p>
+<p>8189720 Peramalan dengan motode Moving Average 5 bulanan Ramalan permintaan konsumen untuk januari 2018. Berikut ini contoh soal metode average dalam bidang bidang akuntansi yang bisa dipelajari dalam pembuatan laporan keuangan perusahaan dagang. Ia meminta sang manajer untuk mengestimasi nilai tersebut dengan data omzet bulanan dari bulan Juni 2011 sampai Desember 2012. Asumsikan bahwa seorang manajer keuangan memiliki data aliran kas masuk cash inflow berikut ini. Lakukan pembobotan pada masing-masing bulan dimana bulan terakhir mendapatkan pembobotan yang lebih besar kemudian bagi dengan jumlah periode yang ada.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://lh5.googleusercontent.com/proxy/cg6FyPEHVQwofYXjX8yryEp0pOPKXpwZ0Hu7z4G0af0KgsxPM8DYcl__cowJ1W9EnMfKRh7MUMJLbo-ZHqb0OWjvfeMZ4ZxuDfKwJ-Kbl_XGzMu_m_jHaQJUtvGpxkI9XwX8iU-bSt_dyRzipHMs=w1200-h630-p-k-no-nu" alt="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" title="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: perantiguru.com</p>
+<p>Mean Absolute Percentage Error. Pada tabel di atas jumlah obervasi m yaitu 19 lebih banyak dibanding dengan metode simple moving average 3 bulanan 16 karena pada metode eksponensial perhitungan ramalan dapat dimulai dari data pada periode awal. Itu berarti 12640 12641 12642 12641 4 12641. Contoh soal dan jawaban peramalan penjualan metode moving average. Mean Absolute Percentage Error.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://www.akseleran.co.id/blog/wp-content/uploads/2020/12/Metode-Moving-Average.jpg" alt="Moving Average Pengertian Contoh Serta Fungsinya Akseleran Blog" title="Moving Average Pengertian Contoh Serta Fungsinya Akseleran Blog" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: akseleran.co.id</p>
+<p>Asumsikan bahwa seorang manajer keuangan memiliki data aliran kas masuk cash inflow berikut ini. Dengan menggunakan metode ini maka akan berdampak pada laba kotor dan harga pokok penjualan. Langkah -langkah di dalam menyelesaikan contoh soal Weighted Moving Average di atas sebagai berikut. Berikut ini contoh soal metode average dalam bidang bidang akuntansi yang bisa dipelajari dalam pembuatan laporan keuangan perusahaan dagang. Pemimpin Safira Beach Resto ingin mengetahui omzet restoran pada Januari 2013.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slidetodoc.com/presentation_image_h/21a96c47212e8014ba1681db2fd2e740/image-9.jpg" alt="Peramalan Dengan Metode Smoothing Dr Hamdan S Pd" title="Peramalan Dengan Metode Smoothing Dr Hamdan S Pd" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: slidetodoc.com</p>
+<p>Metode lainnya dikenal sebagai weighted moving average yang memberikan penekanan weight yang berbeda pada setiap nilai data dan kemudian menghitung bobot yang paling besar untuk pengamatan yang paling baru. Itu berarti 12640 12641 12642 12641 4 12641. Metode moving average. Metode Moving Average MA menggunakan rata-rata beberapa data terakhir sebagai data prakiraan masa berikutnya. Pemimpin Safira Beach Resto ingin mengetahui omzet restoran pada Januari 2013.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-ku-sha7fE1k/X7srFIUogYI/AAAAAAAACPg/7MhrWWwq4vw9uGG1LKAaYEdF4gHsXD1KQCNcBGAsYHQ/s496/contoh%2Bsoal%2Bwma.jpg" alt="Contoh Soal Weighted Moving Average Wma Khoiri Com" title="Contoh Soal Weighted Moving Average Wma Khoiri Com" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: khoiri.com</p>
+<p>Di lain pihak metode Weighted Moving Average WMA berusaha mem-forecast dengan beberapa data terakhir.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slideplayer.info/slide/11875245/66/images/28/Contoh&#43;Soal&#43;Simple&#43;Moving&#43;Averages.jpg" alt="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" title="Contoh Soal Dan Jawaban Peramalan Penjualan Metode Moving Average Peranti Guru" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: perantiguru.com</p>
+<p>Metode ini berusaha memuluskan perubahan data yang sangat tinggi atau sangat rendah. Metode Moving Average MA menggunakan rata-rata beberapa data terakhir sebagai data prakiraan masa berikutnya. Sebagai contoh empat periode SMA dengan harga 12640 12641 12642 dan 12641 akan menghasilkan pergerakan rata-rata 12641 jika dihitung dengan formula di atas. Pada Metode Moving Average digunakan untuk peramalan periode 3 bulan dan 5 bulan sedangkan metode Exponential Smoothing menggunakan parameter 01. Pada tabel di atas jumlah obervasi m yaitu 19 lebih banyak dibanding dengan metode simple moving average 3 bulanan 16 karena pada metode eksponensial perhitungan ramalan dapat dimulai dari data pada periode awal.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-NfOeaS_oukM/X7sow5FmK_I/AAAAAAAACPU/BPkkhS1hmIA1cslleHFlxif68iCeqCfqwCNcBGAsYHQ/s331/contoh%2Bsoal%2Bweighted%2Bma.jpg" alt="Contoh Soal Weighted Moving Average Wma Khoiri Com" title="Contoh Soal Weighted Moving Average Wma Khoiri Com" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: khoiri.com</p>
+<p>Mean Absolute Percentage Error. Moving Average Plot for C1. 8189720 Peramalan dengan motode Moving Average 5 bulanan Ramalan permintaan konsumen untuk januari 2018. Metode moving average. MINITAB menampilkan beberapa kriteria ketepatan peramalan yaitu.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://i1.wp.com/ilmumanajemenindustri.com/wp-content/uploads/2018/01/Forecasting-dengan-Metode-Moving-Average.jpg?fit=640%2C280&amp;amp;ssl=1" alt="Pengertian Moving Average Rata Rata Bergerak Dan Rumus Moving Average" title="Pengertian Moving Average Rata Rata Bergerak Dan Rumus Moving Average" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: ilmumanajemenindustri.com</p>
+<p>Ia meminta sang manajer untuk mengestimasi nilai tersebut dengan data omzet bulanan dari bulan Juni 2011 sampai Desember 2012. Ia meminta sang manajer untuk mengestimasi nilai tersebut dengan data omzet bulanan dari bulan Juni 2011 sampai Desember 2012. Dengan data penjualan Kue Ners selama tahun 2021 sebagai berikut. Asumsikan bahwa seorang manajer keuangan memiliki data aliran kas masuk cash inflow berikut ini. Contoh soal moving average.</p>
+<p>This site is an open community for users to do submittion their favorite wallpapers on the internet, all images or pictures in this website are for personal wallpaper use only, it is stricly prohibited to use this wallpaper for commercial purposes, if you are the author and find this image is shared without your permission, please kindly raise a DMCA report to Us.</p>
+<p>If you find this site convienient, please support us by sharing this posts to your preference social media accounts like Facebook, Instagram and so on or you can also save this blog page with the title contoh metode moving average by using Ctrl + D for devices a laptop with a Windows operating system or Command + D for laptops with an Apple operating system. If you use a smartphone, you can also use the drawer menu of the browser you are using. Whether it&rsquo;s a Windows, Mac, iOS or Android operating system, you will still be able to bookmark this website.</p>
+</article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/download-novel-pdf-dreame/">&laquo;&laquo;&nbsp;Download Novel Pdf Dreame</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/contoh-undangan-bukber/">Contoh Undangan Bukber&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Read next</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/pulsa-gratis-non-subsidi/"><img height="80" src="/img/placeholder.svg" data-src="https://cdn2.tstatic.net/pontianak/foto/bank/images/cara-daftar-listrik-gratis-non-subsidi-900-watt-dan-1300-va-lightup-login-wwwlightupid.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/pulsa-gratis-non-subsidi/">Pulsa Gratis Non Subsidi</a>
+                        </h2>
+                        <small class="text-muted">Aug 07 . 4 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/efek-samping-vaksin-astrazeneca-dan-sinovac/"><img height="80" src="/img/placeholder.svg" data-src="https://cdns.klimg.com/merdeka.com/i/w/news/2021/03/09/1282909/540x270/ciri-dan-efek-samping-vaksin-astrazeneca-dengan-sinovac-hampir-sama.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/efek-samping-vaksin-astrazeneca-dan-sinovac/">Efek Samping Vaksin Astrazeneca Dan Sinovac</a>
+                        </h2>
+                        <small class="text-muted">Apr 27 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/info-tokopedia-terbaru/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/3c/57/2f/3c572f5c20e449b5897ca745d847c27b.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/info-tokopedia-terbaru/">Info Tokopedia Terbaru</a>
+                        </h2>
+                        <small class="text-muted">May 13 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/contoh-soal-tes-online-oto-group/"><img height="80" src="/img/placeholder.svg" data-src="https://images.tokopedia.net/img/cache/700/product-1/2020/6/8/28258329/28258329_cd3e51e3-6283-4905-8f9a-c013a559069d_533_533" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/contoh-soal-tes-online-oto-group/">Contoh Soal Tes Online Oto Group</a>
+                        </h2>
+                        <small class="text-muted">Jul 25 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/contoh-soal-matematika-kelas-6-bangun-ruang-gabungan/"><img height="80" src="/img/placeholder.svg" data-src="https://i.ytimg.com/vi/1sudZzyn0-w/maxresdefault.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/contoh-soal-matematika-kelas-6-bangun-ruang-gabungan/">Contoh Soal Matematika Kelas 6 Bangun Ruang Gabungan</a>
+                        </h2>
+                        <small class="text-muted">Jul 05 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/pendaftaran-cpns-asn-2021/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/736x/60/af/b4/60afb4579487eb5e34d81b1b59b89aea.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/pendaftaran-cpns-asn-2021/">Pendaftaran Cpns Asn 2021</a>
+                        </h2>
+                        <small class="text-muted">Jun 01 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://materiguru.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://materiguru.github.io">MATERI GURU</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

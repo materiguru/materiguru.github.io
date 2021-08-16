@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>Contoh Metode Quick Sort | MATERI GURU</title>
+<meta name="url" content="https://materiguru.github.io/contoh-metode-quick-sort/" />
+<meta property="og:url" content="https://materiguru.github.io/contoh-metode-quick-sort/">
+<meta property="article:author" content="Heru"> 
+<meta name="author" content="Heru">
+<link rel="canonical" href="https://materiguru.github.io/contoh-metode-quick-sort/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://materiguru.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+    
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "Contoh Metode Quick Sort",
+    "headline": "Contoh Metode Quick Sort",
+    "alternativeHeadline": "",
+    "description": "Contoh Metode Quick Sort. Return 0 int sort_functionconst voidaconstb. Berikut adalah implementasi dari quick sort dalam bahasa C. Include include include int sort_functionconst voidaconst voidb.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/materiguru.github.io\/contoh-metode-quick-sort\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Heru"
+    },
+    "copyrightHolder" : "MATERI GURU",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-07-28T11:46:36.00Z",
+    "datePublished": "2021-07-28T11:46:36.00Z",
+    "dateModified": "2021-08-16T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "MATERI GURU",
+        "url": "https://materiguru.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/materiguru.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://materiguru.github.io/logo.png",
+    "url" : "https:\/\/materiguru.github.io\/contoh-metode-quick-sort\/",
+    "wordCount" : "1012",
+    "genre" : [ "sekolah" ],
+    "keywords" : [ "Contoh" , "metode" , "quick" , "sort" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://materiguru.github.io"><span style="text-transform: capitalize;font-weight: bold;">MATERI GURU</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://materiguru.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/belajar/" title="Belajar">Belajar</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/pengetahuan/" title="Pengetahuan">Pengetahuan</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://materiguru.github.io/categories/sekolah/" title="Sekolah">Sekolah</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://materiguru.github.io/categories/sekolah"/>Sekolah</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">Contoh Metode Quick Sort</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Heru <span class="text-muted d-block mt-1">Jul 28, 2021 · <span class="reading-time">5 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://laskarbakerstreet.files.wordpress.com/2010/01/quick-sort.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" alt="Contoh Metode Quick Sort"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p></p><script type='text/javascript' src='//pl16516212.highperformancecpm.com/b7/0a/80/b70a809db83a9c6a5c25d24145477fef.js'></script>
+<p><strong>Contoh Metode Quick Sort</strong>. Return 0 int sort_functionconst voidaconstb. Berikut adalah implementasi dari quick sort dalam bahasa C. Include include include int sort_functionconst voidaconst voidb. Metode Quick Sort disebut juga dengan nama partition exchange sort.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slideplayer.info/slide/4120871/12/images/8/Quick&#43;sort&#43;%283%2C8%29&#43;%5B0%5D&#43;%5B1%5D&#43;%5B2%5D&#43;%5B3%5D&#43;%5B4%5D&#43;%5B5%5D&#43;%5B6%5D&#43;%5B7%5D&#43;%5B8%5D.jpg" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Contoh Soal Quick Sort From kumpulansoal-113.blogspot.com</p>
+<p><span class="navi text-left"><a class="badge badge-primary" href="/format-surat-perjanjian-sewa-lahan/">Format surat perjanjian sewa lahan</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/free-download-noveltoon/">Free download noveltoon</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/gambar-buku-paud/">Gambar buku paud</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/format-penilaian-video-pembelajaran/">Format penilaian video pembelajaran</a></span></p>
+<p>Materi membahas mulai dari pengertian Quick Sort pseudocode Quick Sort analisis algoritma Quick Sort dan dDiakhir sesi dapat dilihat implemetasi Quick Sort Menggunakan CC. Quick Sort merupakan suatu algoritma pengurutan data yang menggunakan teknik pemecahan data menjadi partisi-partisi sehingga metode ini disebut juga dengan nama partition exchange sort. Metode pengurutan merge sort adalah metode pengurutan lanjut sama dengan metode Quick Sort. Metode ini juga menggunakan konsep devide and conquer yang membagi data S dalam dua kelompok yaitu S1 dan S2 yang tidak beririsan disjoint. Bahan Ajarmodul matakuliah Struktur Data ini membahas konsep tentang salah satu metode pengurutan Quick Sort. Return 0 int sort_functionconst voidaconstb.</p>
+<h3 id="disebut-quick-sort-karena-algoritma-quick-sort-mengurutkan-dengan-sangat-cepat">Disebut Quick Sort karena Algoritma quick sort mengurutkan dengan sangat cepat.</h3><p>Metode Pengurutan yang terakhir ane posting yaitu Quick Sort semoga bermanfaat. Metode Pengurutan yang terakhir ane posting yaitu Quick Sort semoga bermanfaat. Berikut sources code dalam bahasa C fungsi main. Int mainvoid int x. Insertion Sortpengurutan sisip adalah metode pengurutan dengan cara menyisipkan elemen larik pada posisi yang tepat. Bentuknya yang sederhana efisien dan efektif dengan cepat membuatnya menjadi algoritma pengurutan sorting yang paling banyak digunakan terutama dalam bahasa pemrograman.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://www.dictio.id/uploads/db3342/original/3X/1/0/10cafba6f18c67fd6f15626b86ff950cde55cc1f.jpg" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kumpulansoal-113.blogspot.com</p>
+<p>Pivot xy2 pivot 082 4 pivotnya berada pada indeks ke-4. Metode Pengurutan yang terakhir ane posting yaitu Quick Sort semoga bermanfaat. Quick sort disebut juga dengan partition exchange sort karena. Quick Sort merupakan suatu algoritma pengurutan data yang menggunakan teknik pemecahan data menjadi partisi-partisi sehingga metode ini disebut juga dengan nama partition exchange sort. Contoh pengurutan data yang dilakukan dengan metode bubble sort sebagai berikut.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Partition_example.svg/200px-Partition_example.svg.png" alt="Quicksort Wikipedia Bahasa Indonesia Ensiklopedia Bebas" title="Quicksort Wikipedia Bahasa Indonesia Ensiklopedia Bebas" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: id.wikipedia.org</p>
+<p>Proses pembagian data dilakukan secara rekursif sampai data tidak dapat dibagi lagi atau dengan kata lain data dalam sub bagian menjadi tunggal. Metode Quick sort merupakan suatu algoritma pengurutan data yang menggunakan teknik pemecahan data menjadi partisi-partisi sehingga metode ini disebut juga dengan nama partition exchange sort. Mengurutkan Data Dengan Metode Quick Sort. Pivot xy2 pivot 082 4 pivotnya berada pada indeks ke-4. Bahan Ajarmodul matakuliah Struktur Data ini membahas konsep tentang salah satu metode pengurutan Quick Sort.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://lh5.googleusercontent.com/proxy/6SJopv8GQ28aNSbAVdCRpVbv-gkT7nOhsmR-t1Jng5Ba3hJbv2lAxTWIM3lOhC6PGsJ0uDVM__lZCVWZZVHcHNN5S8A=s0-d" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: senidansastrapopuler.blogspot.com</p>
+<p>Berikut adalah implementasi dari quick sort dalam bahasa C. Pivot xy2 pivot 082 4 pivotnya berada pada indeks ke-4. Berikut listing program QuickSort dengan Java silahkan dicoba yaaa. Pivot. Quick sort disebut juga dengan partition exchange sort karena.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://slideplayer.info/slide/4120871/12/images/8/Quick&#43;sort&#43;%283%2C8%29&#43;%5B0%5D&#43;%5B1%5D&#43;%5B2%5D&#43;%5B3%5D&#43;%5B4%5D&#43;%5B5%5D&#43;%5B6%5D&#43;%5B7%5D&#43;%5B8%5D.jpg" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kumpulansoal-113.blogspot.com</p>
+<p>Berikut sources code dalam bahasa C fungsi main. Mengurutkan Data Dengan Metode Quick Sort. Untuk memulai proses pengurutan pertama-tama sebuah data dipilih dari kelompok data sebagai data pivot. Script quick sort include include include void quickSortintint. Public class QuickSort2 public static void quick_srt.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="rwim6KGNigIjbM" alt="Http Aslangpemrograman Blogspot Com 2012 05 Tutorial C C Metode Quick Sort Html" title="Http Aslangpemrograman Blogspot Com 2012 05 Tutorial C C Metode Quick Sort Html" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source:</p>
+<p>Contoh Pseudocode Quick Sort Quicksort A as array low as int high as int if low high pivot_location Partition Alowhigh. Pivot. Pengertian Quick Sort Algoritma sortir yang efisien yang ditulis oleh CAR. Script quick sort include include include void quickSortintint. Implementasi Algoritma Quick Sort.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://4.bp.blogspot.com/-hSW8Tr3zWEE/UQ46eCVGpVI/AAAAAAAAAD0/R1CWwdBNew0/s1600/6.png" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kumpulansoal-113.blogspot.com</p>
+<p>Pencarian posisi yang tepat dilakukan dengan pencarian beruntun. Metode quick sort Algoritma quicksort diperkenalkan pertama kali oleh CAR. Pengertian Quick Sort Algoritma sortir yang efisien yang ditulis oleh CAR. Bahan Ajarmodul matakuliah Struktur Data ini membahas konsep tentang salah satu metode pengurutan Quick Sort. Quick Sort merupakan suatu algoritma pengurutan data yang menggunakan teknik pemecahan data menjadi partisi-partisi sehingga metode ini disebut juga dengan nama partition exchange sort.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://2.bp.blogspot.com/-GjsJHTxoFvI/WAdIsns9TWI/AAAAAAAAAIU/rcnY22EQhgETiPqhg6EILKx9840Zze9mwCLcB/w1200-h630-p-k-no-nu/slide_10.jpg" alt="Pengertian Dan Metode Quick Sort Muhammad Haluan Rangkuti" title="Pengertian Dan Metode Quick Sort Muhammad Haluan Rangkuti" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: muhammadhaluanrangkuti.blogspot.com</p>
+<p>22 10 15 3 8 2 22 10 15 3 2 8 22 10 15 2 3 8 22 10 2 15 3 8 22 10 2 15 3 8. Prosedure quick_sortdataarray1n of integerawal_dataakhir_data. Contoh Prosudure Quick Sort. Metode Quick Sort disebut juga dengan nama partition exchange sort. Pivot.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/_oeolvjNvF3s/TQyBKS6QEMI/AAAAAAAAAJg/evLBkGVq2Ms/s1600/QuickSort1a.GIF" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: ayobelajarpemasaran.blogspot.com</p>
+<p>Berikut sources code dalam bahasa C fungsi main. Contoh Prosudure Quick Sort. Quick sort adalah algoritma sorting yang berdasarkan pembandingan dengan metode divide and conquer bagi dan kuasai. Proses pembagian data dilakukan secara rekursif sampai data tidak dapat dibagi lagi atau dengan kata lain data dalam sub bagian menjadi tunggal. Metode quick sort Algoritma quicksort diperkenalkan pertama kali oleh CAR.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://fairuzelsaid.files.wordpress.com/2010/01/quick-sort.png" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kumpulansoal-113.blogspot.com</p>
+<p>Berikut adalah implementasi dari quick sort dalam bahasa C. Disebut Quick Sort karena Algoritma quick sort mengurutkan dengan sangat cepat. Quick Sort merupakan suatu algoritma pengurutan data yang menggunakan teknik pemecahan data menjadi partisi-partisi sehingga metode ini disebut juga dengan nama partition exchange sort. Pivot xy2 pivot 082 4 pivotnya berada pada indeks ke-4. Include include include.</p>
+<p><img loading="lazy" width="100%" src="https://materiguru.github.io/img/placeholder.svg" data-src="https://laskarbakerstreet.files.wordpress.com/2010/01/quick-sort.png" alt="Contoh Soal Quick Sort" title="Contoh Soal Quick Sort" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';" class="center" />
+Source: kumpulansoal-113.blogspot.com</p>
+<p>22 10 15 3 8 2 22 10 15 3 2 8 22 10 15 2 3 8 22 10 2 15 3 8 22 10 2 15 3 8. Pencarian posisi yang tepat dilakukan dengan pencarian beruntun. Algoritma quick sort diperkenalkan pertama kali oleh CAR. Void quicksortint x int first int last int pivIndex 0. 6 2 9 5 4 1 7 3 8Pada data tersebut akan di urutkan menggunakan metode quick sort pada contoh akan menggunakan pivot dari titik tengah pada array menggunakan aritmatika.</p>
+<p>This site is an open community for users to do sharing their favorite wallpapers on the internet, all images or pictures in this website are for personal wallpaper use only, it is stricly prohibited to use this wallpaper for commercial purposes, if you are the author and find this image is shared without your permission, please kindly raise a DMCA report to Us.</p>
+<p>If you find this site helpful, please support us by sharing this posts to your own social media accounts like Facebook, Instagram and so on or you can also bookmark this blog page with the title contoh metode quick sort by using Ctrl + D for devices a laptop with a Windows operating system or Command + D for laptops with an Apple operating system. If you use a smartphone, you can also use the drawer menu of the browser you are using. Whether it&rsquo;s a Windows, Mac, iOS or Android operating system, you will still be able to bookmark this website.</p>
+</article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/info-lomba-hari-santri/">&laquo;&laquo;&nbsp;Info Lomba Hari Santri</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/efek-vaksin-covid-tidak-bisa-tidur/">Efek Vaksin Covid Tidak Bisa Tidur&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Read next</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/buku-cpns-tenaga-kesehatan/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/4f/3f/a3/4f3fa36027a87bcbb2e0ae6c70c5cd44.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/buku-cpns-tenaga-kesehatan/">Buku Cpns Tenaga Kesehatan</a>
+                        </h2>
+                        <small class="text-muted">Jun 21 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/download-novel-erlan-pdf/"><img height="80" src="/img/placeholder.svg" data-src="https://www.bukukita.com/babacms/displaybuku/112360_b.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/download-novel-erlan-pdf/">Download Novel Erlan Pdf</a>
+                        </h2>
+                        <small class="text-muted">Jun 03 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/cara-mendapatkan-efek-recall-epic-ml/"><img height="80" src="/img/placeholder.svg" data-src="https://i.ytimg.com/vi/bmv0d91uRgg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/cara-mendapatkan-efek-recall-epic-ml/">Cara Mendapatkan Efek Recall Epic Ml</a>
+                        </h2>
+                        <small class="text-muted">Jun 08 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/rpp-daring-kelas-2-tema-7-subtema-4/"><img height="80" src="/img/placeholder.svg" data-src="https://dicariguru.com/wp-content/uploads/2021/02/da3.png" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/rpp-daring-kelas-2-tema-7-subtema-4/">Rpp Daring Kelas 2 Tema 7 Subtema 4</a>
+                        </h2>
+                        <small class="text-muted">May 08 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/info-tunjangan-guru-daerah-terpencil/"><img height="80" src="/img/placeholder.svg" data-src="https://img.okezone.com/content/2018/06/13/1/1909993/kemendikbud-berikan-tunjangan-khusus-untuk-guru-di-daerah-sangat-tertinggal-LOGPA2Y9dJ.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/info-tunjangan-guru-daerah-terpencil/">Info Tunjangan Guru Daerah Terpencil</a>
+                        </h2>
+                        <small class="text-muted">May 22 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/contoh-soal-nilai-mutlak-persamaan-linear-satu-variabel/"><img height="80" src="/img/placeholder.svg" data-src="https://i.ytimg.com/vi/FIlTmtD_GMA/hqdefault.jpg" onerror="this.onerror=null;this.src='https:\/\/materiguru.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/contoh-soal-nilai-mutlak-persamaan-linear-satu-variabel/">Contoh Soal Nilai Mutlak Persamaan Linear Satu Variabel</a>
+                        </h2>
+                        <small class="text-muted">Jul 01 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://materiguru.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://materiguru.github.io">MATERI GURU</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>
